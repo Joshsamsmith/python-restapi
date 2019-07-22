@@ -33,4 +33,4 @@ def home():
 
 # run the app
 if __name__ == "__main__":
-    connex_app.run(debug=True)
+    connex_app.run(port=80)
