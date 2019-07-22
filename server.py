@@ -25,7 +25,7 @@ connex_app.add_api("swagger.yml")
 def home():
     """
     This function just responds to the browser URL
-    localhost:5000/
+    0.0.0.0:80/
     :return: the rendered template "home.html"
     """
     return render_template("home.html")
@@ -33,4 +33,4 @@ def home():
 
 # run the app
 if __name__ == "__main__":
-    connex_app.run(port=80)
+    connex_app.run(host="0.0.0.0", port=80)
